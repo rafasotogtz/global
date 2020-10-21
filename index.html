@@ -178,7 +178,7 @@
             <div class="hire">
               <h2>You want us to do</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form class="work-request" action="correos.php" method="POST">
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="app design">
@@ -245,17 +245,19 @@
                     </label>
                   </span>
                 </div>
+                <!-- FORMULARIO DE EMAIL -->
                 <div class="work-request--information">
                   <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
+                    <input type="text" name="nombre" id="" required>
+                    <label >Name</label>
                   </div>
                   <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
+                    <input type="email" name="email" id="" required>
+                    <label>Email</label>
                   </div>
                 </div>
                 <input type="submit" value="Send Request">
+                <!-- FORMULARIO DE EMAIL -->
               </form>
             </div>
           </li>
